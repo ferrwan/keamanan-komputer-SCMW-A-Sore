@@ -3,7 +3,7 @@
 2. CD ke directory folder yang anda inginkan
 3. Git clone dengan command ```git clone https://github.com/ferrwanz/keamanan-komputer-SCMW-A-Sore.git ```
 4. cd ke dalam folder ```cd keamanan-komputer-SCMW-A-Sore```
-5. Edit file README.md dengan editor anda. Cukup edit pada bagian Nama - NIM, Nama Layer, dan kata - kata setelah 'titik-dua' (: )
+5. Edit file README.md dengan editor anda. Copy text dari Nama - NIM sampai "- - - -" kemudian paste kan dibawahnya (Ingat untuk enter 1 line sebelum "- - - -". 1 line kosong adalah enter dalam file .md ini). Cukup edit pada bagian Nama - NIM, Nama Layer, dan kata - kata setelah 'titik-dua' (: )
 6. Siap edit, git add dengan command ```git add README.md```
 7. Commit sesuai dengan deskripsi anda ```git commit -m "Deskripsi yang sesuai kerjaan anda"```
 8. Silahkan push ```git push origin master```. Masukkan username dan password anda.
