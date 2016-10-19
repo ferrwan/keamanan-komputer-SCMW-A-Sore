@@ -52,7 +52,7 @@
 
 ## Willy - 14.111.0311
 
-### 1. Transport Layer Layer
+### 1. Transport Layer
 
 * Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Session Hijacking 
 * Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: C
