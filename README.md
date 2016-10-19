@@ -70,3 +70,21 @@
 * Counter Measure/Prevent &nbsp;: Connect WiFi / Hotspot teman or tempat publik, Beli Kuota Bung !
 
 - - - - 
+
+## Christopher Ganda - 14.111.3368
+
+### 1. Layer Name Here
+
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : ICMP Flooding
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: A
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: penyerangan pada layer 3 dengan infrastruktur metode penyerangan DDoS yang menggunakan ICMP untuk mengoverload bandwith dari target yang akan diserang. Biasa ping digunakan untuk mengecek konektifitas antara 2komputer dengan cara request ICMP dikirim dan komputer target membalas balik dengan ICMP pula.ICMP flooding bekerja dengan mengirimkan request tersebut(ping) secepat mungkin tanpa menunggu komputer target mereply/membalas sehingga terjadi overloading pada jaringan target.
+* Counter Measure/Prevent &nbsp;: Dengan membatasi limit dari traffic ICMP atau biasa disebut dengan ICMP flood protection.Satuan traffic yang digunakan adalah packets per second(pps)
+
+### 2. Layer Name Here
+
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : SIP Malformed Attack
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: A
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Penyerangan yang terjadi pada Session Initiation Protocol(SIP) pada service VoIP.Penyerangan DDoS ini menyerang server SIP. Penyerang mengirim pesan-pesan malformed yang tidak valid untuk mencari celah yang dapat masuk ke sistem SIP sehingga tidak dapat di generate oleh protokol standar SIP. 
+* Counter Measure/Prevent &nbsp;: Menggunakan algoritma-algoritma yang dapat memvalidasi pesan-pesan invalid tersebut
+
+- - - - 
