@@ -22,10 +22,10 @@
 
 ## Denny Ho & 14.111.0191
 
-### 1. Layer Name Here
+### 1. Application Layer
 
 * Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Cross-Site_Request_Forgery
-* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: A
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: C
 * Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Sebuah penyerangan yang memaksa user untuk submit data ke website yang user sedang login misalnya ketika login pada website perbankan user dipaksa untuk transfer uang. Cross site request forgery dapat dipadukan dengan XSS (cross site scripting) yang melakukan submit data otomatis dengan script yang diberi.
 * Counter Measure/Prevent &nbsp;: Menggunakan CSRF Token
 
