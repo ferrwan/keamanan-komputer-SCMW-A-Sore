@@ -150,3 +150,21 @@ Mohon untuk tidak sembarangan mengupload, mengubah dan menghapus file ataupun ha
 * Counter Measure/Prevent &nbsp;: Menggunakan antivirus yang bisa mendeteksi Malware, tetapi Zeus tidak mudah untuk dideteksi karena bisa menyembunyikan dirinya dengan Stealth Techniques. Cara pencegahan yang utama adalah dengan mengajarkan atau melatih para staff (untuk bisnis), murid, teman - teman dan keluarga untuk tidak sembarangan dalam mendownlod file, tidak sembarangan memasuki link - link yang ada, usahakan untuk memasang ad-block dan usahakan perlindungan antivirus berada dalam versi yang terbaru
 
 - - - - 
+
+## William Sumitro - 14.111.1821
+
+### 1. Application Layer
+
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : SQL Injection
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Confidentiality dan Availability
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: menginput data ke dalam query SQL kesebuah aplikasi. Apabila SQL injection tersebut berhasil, maka attacker ini dapat membaca isi semua yang ada didalam database juga dapat memodify (edit, add, delete) data tersebut.
+* Counter Measure/Prevent &nbsp;: Menggunakan parameter, seperti SQL parameters.
+
+### 2. Layer Name Here
+
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Kuota Habis
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: C atau I atau A (Terserah)
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Tidak bisa menghubungkan client ke server untuk bermain DotA
+* Counter Measure/Prevent &nbsp;: Connect WiFi / Hotspot teman or tempat publik, Beli Kuota Bung !
+
+- - - - 
