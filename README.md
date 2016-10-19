@@ -12,6 +12,8 @@
 11. Apabila bingung dengan git merge, maka pakai branch baru saja dengan command ```git checkout -b new-branch-name```. Nanti akan saya merge-kan.
 12. Git susah? Tidak. Hanya kurang pengalaman memakai saja.
 
+Mohon untuk tidak sembarangan mengupload, mengubah dan menghapus file ataupun hasil kerja teman - teman lain ya. Thanks
+
 - - - -
 
 ## Name - NIM Here
