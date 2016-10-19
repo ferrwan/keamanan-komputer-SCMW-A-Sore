@@ -160,11 +160,11 @@ Mohon untuk tidak sembarangan mengupload, mengubah dan menghapus file ataupun ha
 * Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: menginput data ke dalam query SQL kesebuah aplikasi. Apabila SQL injection tersebut berhasil, maka attacker ini dapat membaca isi semua yang ada didalam database juga dapat memodify (edit, add, delete) data tersebut.
 * Counter Measure/Prevent &nbsp;: Menggunakan parameter, seperti SQL parameters.
 
-### 2. Layer Name Here
+### 2. Network Layer
 
-* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Kuota Habis
-* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: C atau I atau A (Terserah)
-* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Tidak bisa menghubungkan client ke server untuk bermain DotA
-* Counter Measure/Prevent &nbsp;: Connect WiFi / Hotspot teman or tempat publik, Beli Kuota Bung !
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Ping of Death (PoD)
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Availability
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Attacker mengirimkan malformed atau packet berukuran lebih dari 65536 bytes dengan menggunakan perintah ping yang simple dimana dengan tujuan untuk membuat target komputer tersebut crash, reboot ataupun freeze. 
+* Counter Measure/Prevent &nbsp;: Upgrade perangkat yang terhubung ke jaringan. Karena pada tahun 1998, semua perangkat telah diupgrade untuk mencegah serangan tersebut.
 
 - - - - 
