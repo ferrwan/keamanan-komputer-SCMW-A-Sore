@@ -80,7 +80,7 @@ Mohon untuk tidak sembarangan mengupload, mengubah dan menghapus file ataupun ha
 * Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : MAC Address alteration and MAC Flooding attacks
 * Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Availability
 * Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Perangkat jaringan yang terkena serangan MAC flooding, semua resource CPU akan seperti tersedot. Dengan MAC Address alteration, laju lalu lintas jaringan dapat diubah dengan mudah. Serangan MAC Flooding menyebabkan terjadinya overflow pada MAC table di switch. Switch akan melambat dan bisa menyebabkan crash
-* Counter Measure/Prevent &nbsp;: Dengan mengunakan fungsi dari por-security yang disediakan oleh Cisco ISO
+* Counter Measure/Prevent &nbsp;: Dengan mengunakan fungsi dari port-security yang disediakan oleh Cisco ISO
 
 ### 2. Transport Layer
 
