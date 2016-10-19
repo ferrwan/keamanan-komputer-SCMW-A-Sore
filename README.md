@@ -124,11 +124,11 @@ Mohon untuk tidak sembarangan mengupload, mengubah dan menghapus file ataupun ha
 * Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: melakukan pencurian hak akses oleh sebuah AP untuk dapat tergabung kedalam sebuah jaringan wireless dan ikut melayani para penggunanya, akses ini disebabkan karena AP palsu mendapakan SSID dari jaringan tersebut dan melakukan broadcast SSID, Selain itu AP juga bisa memalsukan alamat MAC. 
 * Counter Measure/Prevent &nbsp;: Menyembunyikan SSID,Mengunci WEP,Menggunakan MAC Filtering dan Captive Portal
 
-### 2. Layer Name Here
+### 2. Transport layer
 
-* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Kuota Habis
-* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: C atau I atau A (Terserah)
-* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: 
-* Counter Measure/Prevent &nbsp;: Connect WiFi / Hotspot teman or tempat publik, Beli Kuota Bung !
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Smurf Attack
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Availability
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Broadcast ping yang terkirim dan sumber IP terlihat sama dengan IP address korban. Komputer akan merespon balik dan mengirim dan akan mengirim Ping Reply ke korban secara terus-menerus, sampai mesin korban atau link mengalami overload dan dalam kondisi Denial of Service.
+* Counter Measure/Prevent &nbsp;: Menggunakan Shorewall
 
 - - - - 
