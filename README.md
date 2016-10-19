@@ -43,12 +43,15 @@ Mohon untuk tidak sembarangan mengupload, mengubah dan menghapus file ataupun ha
 * Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Sebuah penyerangan yang memaksa user untuk submit data ke website yang user sedang login misalnya ketika login pada website perbankan user dipaksa untuk transfer uang. Cross site request forgery dapat dipadukan dengan XSS (cross site scripting) yang melakukan submit data otomatis dengan script yang diberi.
 * Counter Measure/Prevent &nbsp;: Menggunakan CSRF Token
 
-### 2. Layer Name Here
+### 2. Application Layer
 
-* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Kuota Habis
-* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: C atau I atau A (Terserah)
-* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Tidak bisa menghubungkan client ke server untuk bermain DotA
-* Counter Measure/Prevent &nbsp;: Connect WiFi / Hotspot teman or tempat publik, Beli Kuota Bung !
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Regex Denial of Services
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: A
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Penyerangan terhadap service yang memiliki validasi dengan regex yang mengandung "evil regex (misalnya (.*a){x} | for x > 10 ) yang rentan terhadap inputan aaaaaaaaaaaaaaaaaaaaaaaa! dimana terdapat 65536 jalur yang ada dalam mengeceknya via evil regex tersebut)" 
+* Counter Measure/Prevent &nbsp;: 
+
+   - Memastikan regex yang digunakan bukan merupakan evil regex.
+   - Pastikan membatasi inputan jika memungkinkan.
 
 - - - - 
 
