@@ -12,6 +12,8 @@
 11. Apabila bingung dengan git merge, maka pakai branch baru saja dengan command ```git checkout -b new-branch-name```. Nanti akan saya merge-kan.
 12. Git susah? Tidak. Hanya kurang pengalaman memakai saja.
 
+Mohon untuk tidak sembarangan mengupload, mengubah dan menghapus file ataupun hasil kerja teman - teman lain ya. Thanks
+
 - - - -
 
 ## Name - NIM Here
@@ -71,6 +73,7 @@
 
 - - - - 
 
+<<<<<<< HEAD
 ## Christopher Ganda - 14.111.3368
 
 ### 1. Layer Name Here
@@ -86,5 +89,22 @@
 * Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: A
 * Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Penyerangan yang terjadi pada Session Initiation Protocol(SIP) pada service VoIP.Penyerangan DDoS ini menyerang server SIP. Penyerang mengirim pesan-pesan malformed yang tidak valid untuk mencari celah yang dapat masuk ke sistem SIP sehingga tidak dapat di generate oleh protokol standar SIP. 
 * Counter Measure/Prevent &nbsp;: Menggunakan algoritma-algoritma yang dapat memvalidasi pesan-pesan invalid tersebut
+=======
+## Kenedy Lukito - 14.111.0043
+
+### 1. Data Link Layer
+
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : MAC Address alteration and MAC Flooding attacks
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Availability
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Perangkat jaringan yang terkena serangan MAC flooding, semua resource CPU akan seperti tersedot. Dengan MAC Address alteration, laju lalu lintas jaringan dapat diubah dengan mudah. Serangan MAC Flooding menyebabkan terjadinya overflow pada MAC table di switch. Switch akan melambat dan bisa menyebabkan crash
+* Counter Measure/Prevent &nbsp;: Dengan mengunakan fungsi dari port-security yang disediakan oleh Cisco ISO
+
+### 2. Transport Layer
+
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : TCP,UDP flooding attacks
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Availability
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Ancaman ini menyerang dengan mengirimkan traffic UDP yang sangat banyak ke target tertentu atau melakukan request TCP 3 way handshaking setelah mengganti IP addressnya. Akibatnya akan menyebabkan kerusakan pada perangkat networking dan server akan mengalami kelebihan muatan.
+* Counter Measure/Prevent &nbsp;: Dengan menggunakan SYN cookies
+>>>>>>> a7dc462d145e32dff7ff45495ad7ac4ec16f3092
 
 - - - - 
