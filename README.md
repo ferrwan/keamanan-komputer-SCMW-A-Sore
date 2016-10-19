@@ -73,7 +73,6 @@ Mohon untuk tidak sembarangan mengupload, mengubah dan menghapus file ataupun ha
 
 - - - - 
 
-<<<<<<< HEAD
 ## Christopher Ganda - 14.111.3368
 
 ### 1. Network Layer
@@ -89,7 +88,9 @@ Mohon untuk tidak sembarangan mengupload, mengubah dan menghapus file ataupun ha
 * Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: A
 * Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Penyerangan yang terjadi pada Session Initiation Protocol(SIP) pada service VoIP.Penyerangan DDoS ini menyerang server SIP. Penyerang mengirim pesan-pesan malformed yang tidak valid untuk mencari celah yang dapat masuk ke sistem SIP sehingga tidak dapat di generate oleh protokol standar SIP. 
 * Counter Measure/Prevent &nbsp;: Menggunakan algoritma-algoritma yang dapat memvalidasi pesan-pesan invalid tersebut
-=======
+
+- - - - 
+
 ## Kenedy Lukito - 14.111.0043
 
 ### 1. Data Link Layer
