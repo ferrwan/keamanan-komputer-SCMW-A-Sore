@@ -16,8 +16,6 @@
 
 - - - - 
 
-- - - - 
-
 ## Denny Ho - 14.111.0191
 
 ### 1. Application Layer
