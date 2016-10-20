@@ -32,7 +32,7 @@ Mohon untuk tidak sembarangan mengupload, mengubah dan menghapus file ataupun ha
 * Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Tidak bisa menghubungkan client ke server untuk bermain DotA
 * Counter Measure/Prevent &nbsp;: Connect WiFi / Hotspot teman or tempat publik, Beli Kuota Bung !
 
-- - - - 
+- - - -
 
 ## Denny Ho - 14.111.0191
 
@@ -47,23 +47,23 @@ Mohon untuk tidak sembarangan mengupload, mengubah dan menghapus file ataupun ha
 
 * Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Regex Denial of Services
 * Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: A
-* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Penyerangan terhadap service yang memiliki validasi dengan regex yang mengandung "evil regex (misalnya (.*a){x} | for x > 10 ) yang rentan terhadap inputan aaaaaaaaaaaaaaaaaaaaaaaa! dimana terdapat 65536 jalur yang ada dalam mengeceknya via evil regex tersebut)" 
-* Counter Measure/Prevent &nbsp;: 
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Penyerangan terhadap service yang memiliki validasi dengan regex yang mengandung "evil regex (misalnya (.*a){x} | for x > 10 ) yang rentan terhadap inputan aaaaaaaaaaaaaaaaaaaaaaaa! dimana terdapat 65536 jalur yang ada dalam mengeceknya via evil regex tersebut)"
+* Counter Measure/Prevent &nbsp;:
 
    - Memastikan regex yang digunakan bukan merupakan evil regex.
    - Pastikan membatasi inputan jika memungkinkan.
 
-- - - - 
+- - - -
 
 ## Willy - 14.111.0311
 
 ### 1. Transport Layer
 
-* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Session Hijacking 
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Session Hijacking
 * Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: C
 * Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Salah satu metode dalam session hijacking adalah  : Session fixation , dimana penyerang ini menempatkan suatu session-id yang diketahui si target lalu si penyerang hanya menunggu target untuk melakukan akses login sehingga penyerang ini mengetahui segala info yang dimiliki oleh si target saat login.
 * Counter Measure/Prevent &nbsp;:
-    1. Menggunakan Enskripsi pada jalur data diantara kedua pihak yang berkomunikasi dengan menggunakan SSL/TLS. 
+    1. Menggunakan Enskripsi pada jalur data diantara kedua pihak yang berkomunikasi dengan menggunakan SSL/TLS.
     2. Menggunakan sebuah angka random string pada session.
 
 
@@ -71,12 +71,12 @@ Mohon untuk tidak sembarangan mengupload, mengubah dan menghapus file ataupun ha
 
 * Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Fraggle Attack
 * Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: A
-* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Fraggle Attack merupakan variasi serangan Distribute Denial Of Service ( DDOS ) dimana penyerang memalsukan alamat sumber lalu mengirimkan flooding berupa paket data yang besar dan banyak melalui jalur UDP kepada 7 port (Echo Protocol) dan 19 port (Charater Generator Protocol) pada alamat IP Broadcast.  
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Fraggle Attack merupakan variasi serangan Distribute Denial Of Service ( DDOS ) dimana penyerang memalsukan alamat sumber lalu mengirimkan flooding berupa paket data yang besar dan banyak melalui jalur UDP kepada 7 port (Echo Protocol) dan 19 port (Charater Generator Protocol) pada alamat IP Broadcast.
 * Counter Measure/Prevent &nbsp;: Untuk mencegah penyerangan ini sejauh ini masih tidak ada caranya , hanya ada cara meringankan penyerangan ini berupa :
     1. Mengkonfigurasi host individu dan router untuk tidak menanggapi permintaan ICMP atau Broadcast.
     2. Mengkonfigurasi router untuk tidak meneruskan paket yang diarahkan untuk alamat Broadcast.
 
-- - - - 
+- - - -
 
 ## Christopher Ganda - 14.111.3368
 
@@ -91,10 +91,10 @@ Mohon untuk tidak sembarangan mengupload, mengubah dan menghapus file ataupun ha
 
 * Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : SIP Malformed Attack
 * Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: A
-* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Penyerangan yang terjadi pada Session Initiation Protocol(SIP) pada service VoIP.Penyerangan DDoS ini menyerang server SIP. Penyerang mengirim pesan-pesan malformed yang tidak valid untuk mencari celah yang dapat masuk ke sistem SIP sehingga tidak dapat di generate oleh protokol standar SIP. 
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Penyerangan yang terjadi pada Session Initiation Protocol(SIP) pada service VoIP.Penyerangan DDoS ini menyerang server SIP. Penyerang mengirim pesan-pesan malformed yang tidak valid untuk mencari celah yang dapat masuk ke sistem SIP sehingga tidak dapat di generate oleh protokol standar SIP.
 * Counter Measure/Prevent &nbsp;: Menggunakan algoritma-algoritma yang dapat memvalidasi pesan-pesan invalid tersebut
 
-- - - - 
+- - - -
 
 ## Kenedy Lukito - 14.111.0043
 
@@ -113,7 +113,7 @@ Mohon untuk tidak sembarangan mengupload, mengubah dan menghapus file ataupun ha
 * Counter Measure/Prevent &nbsp;: Dengan menggunakan SYN cookies
 >>>>>>> a7dc462d145e32dff7ff45495ad7ac4ec16f3092
 
-- - - - 
+- - - -
 
 ### Kelvin Angviesta - 14.111.1511
 
@@ -121,7 +121,7 @@ Mohon untuk tidak sembarangan mengupload, mengubah dan menghapus file ataupun ha
 
 * Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Fake Access Point
 * Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Confidentialty
-* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: melakukan pencurian hak akses oleh sebuah AP untuk dapat tergabung kedalam sebuah jaringan wireless dan ikut melayani para penggunanya, akses ini disebabkan karena AP palsu mendapakan SSID dari jaringan tersebut dan melakukan broadcast SSID, Selain itu AP juga bisa memalsukan alamat MAC. 
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: melakukan pencurian hak akses oleh sebuah AP untuk dapat tergabung kedalam sebuah jaringan wireless dan ikut melayani para penggunanya, akses ini disebabkan karena AP palsu mendapakan SSID dari jaringan tersebut dan melakukan broadcast SSID, Selain itu AP juga bisa memalsukan alamat MAC.
 * Counter Measure/Prevent &nbsp;: Menyembunyikan SSID,Mengunci WEP,Menggunakan MAC Filtering dan Captive Portal
 
 ### 2. Transport layer
@@ -131,7 +131,7 @@ Mohon untuk tidak sembarangan mengupload, mengubah dan menghapus file ataupun ha
 * Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Broadcast ping yang terkirim dan sumber IP terlihat sama dengan IP address korban. Komputer akan merespon balik dan mengirim dan akan mengirim Ping Reply ke korban secara terus-menerus, sampai mesin korban atau link mengalami overload dan dalam kondisi Denial of Service.
 * Counter Measure/Prevent &nbsp;: Menggunakan Shorewall
 
-- - - - 
+- - - -
 
 ### Ferry Irawan - 14.111.0507
 
@@ -149,7 +149,7 @@ Mohon untuk tidak sembarangan mengupload, mengubah dan menghapus file ataupun ha
 * Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Mencuri data - data orang khususnya data berupa informasi bank melalui Man-in-the-browser, keystroke logging (menangkap apa saja yang ditekan pada keyboard) dan form grabbing (mengambil data autorisasi dari form) dan bisa menginstallkan CryptoLocker ransomware. Kebanyakan terjadi pada Windows
 * Counter Measure/Prevent &nbsp;: Menggunakan antivirus yang bisa mendeteksi Malware, tetapi Zeus tidak mudah untuk dideteksi karena bisa menyembunyikan dirinya dengan Stealth Techniques. Cara pencegahan yang utama adalah dengan mengajarkan atau melatih para staff (untuk bisnis), murid, teman - teman dan keluarga untuk tidak sembarangan dalam mendownlod file, tidak sembarangan memasuki link - link yang ada, usahakan untuk memasang ad-block dan usahakan perlindungan antivirus berada dalam versi yang terbaru
 
-- - - - 
+- - - -
 
 ## William Sumitro - 14.111.1821
 
@@ -164,7 +164,25 @@ Mohon untuk tidak sembarangan mengupload, mengubah dan menghapus file ataupun ha
 
 * Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Ping of Death (PoD)
 * Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Availability
-* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Attacker mengirimkan malformed atau packet berukuran lebih dari 65536 bytes dengan menggunakan perintah ping yang simple dimana dengan tujuan untuk membuat target komputer tersebut crash, reboot ataupun freeze. 
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Attacker mengirimkan malformed atau packet berukuran lebih dari 65536 bytes dengan menggunakan perintah ping yang simple dimana dengan tujuan untuk membuat target komputer tersebut crash, reboot ataupun freeze.
 * Counter Measure/Prevent &nbsp;: Upgrade perangkat yang terhubung ke jaringan. Karena pada tahun 1998, semua perangkat telah diupgrade untuk mencegah serangan tersebut.
 
-- - - - 
+- - - -
+
+## Stephen - 14.111.0868
+
+### 1. Application Layer
+
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Keylogger
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Confidentiality
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Keylogger adalah sebuat penyerangan yang berjalan pada proses background dari sebuah komputer, mencatat atau merekam semua tombol yang di ketikkan oleh user. Setelah user mengetikkan sebuah password, password tersebut disimpan pada sebuah log yang dibuat oleh Keylogger yang kemudian dapat dibaca oleh attacker
+* Counter Measure/Prevent &nbsp;: User dapat menggunakan Keylogger detection software, Spybot, atau memberi pengetahuan / edukasi terhadap user untuk tidak sembarangan mengetikkan password pada sembarangan komputer.
+
+### 2. Network Layer
+
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : IP Address Spoofing Attack
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Confidentiality
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: attacker menanam source IP address palsu pada packet. Dengan mengganti source IP address, response dari pakcet akan dikirim pada IP address yang salah, dengan demikian attacker bisa mendapatkan data tersebut.
+* Counter Measure/Prevent &nbsp;: Packet filtering adalah metode untuk mencegah IP Spoofing attack. Mem-block packet dari luar network dengan source address di dalam network (filter jalan masuk) dan mem-block packet dari dalam network dengan source address di luar network (filter jalan keluar) dapat membantu pencegahan IP spoofing attack.
+
+- - - -
