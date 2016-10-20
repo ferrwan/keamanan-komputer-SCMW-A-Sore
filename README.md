@@ -160,12 +160,12 @@ na
 * Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: menginput data ke dalam query SQL kesebuah aplikasi. Apabila SQL injection tersebut berhasil, maka attacker ini dapat membaca isi semua yang ada didalam database juga dapat memodify (edit, add, delete) data tersebut.
 * Counter Measure/Prevent &nbsp;: Menggunakan parameter, seperti SQL parameters.
 
-### 2. Network Layer
+### 2. Physical Layer &amp; Data Link Layer
 
-* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Ping of Death (PoD)
-* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Availability
-* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Attacker mengirimkan malformed atau packet berukuran lebih dari 65536 bytes dengan menggunakan perintah ping yang simple dimana dengan tujuan untuk membuat target komputer tersebut crash, reboot ataupun freeze.
-* Counter Measure/Prevent &nbsp;: Upgrade perangkat yang terhubung ke jaringan. Karena pada tahun 1998, semua perangkat telah diupgrade untuk mencegah serangan tersebut.
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Evil Twin attack
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Confidentiality
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Evil Twin attack dikenal sebagai wireless hijacking dimana hacker memisahkan komunikasi client dan Legitimate AP. Client kehilangan koneksi ke legitimate AP dan reconnect ke evil twin access point. Sehingga attacker dapat mencuri pasword, monitoring apa yang mereka lakukan, dsb
+* Counter Measure/Prevent &nbsp;: Dibutuhkan 802.1X untuk WLAN, dimana menggunakan tipe EAP yang memberikan otentikasi secara bersama dan juga memeriksa sertifikasi dari sebuah server. Ada juga sebuah tool yang dinamakan EvilAP_defender dapat mencegah terjadinya evil twin attack.
 
 - - - -
 
