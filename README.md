@@ -125,11 +125,11 @@ Mohon untuk tidak sembarangan mengupload, mengubah dan menghapus file ataupun ha
 * Counter Measure/Prevent &nbsp;: Menyembunyikan SSID,Mengunci WEP,Menggunakan MAC Filtering dan Captive Portal
 
 ### 2. Transport layer
-
-* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Smurf Attack
-* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Availability
-* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Broadcast ping yang terkirim dan sumber IP terlihat sama dengan IP address korban. Komputer akan merespon balik dan mengirim dan akan mengirim Ping Reply ke korban secara terus-menerus, sampai mesin korban atau link mengalami overload dan dalam kondisi Denial of Service.
-* Counter Measure/Prevent &nbsp;: Menggunakan Shorewall
+na
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: Traffic Analysis Attack
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Confidentialty
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Penyerangan dengan menganalisis pergerakan dari paket-paket yang berbeda pada jaringan, dengan tujuan mendapatkan informasi dari pola trafik paket-paket tersebut, semakin banyak paket yang terobservasi semakin banyak pula informasi yang didapatkan. 
+* Counter Measure/Prevent &nbsp;: Menyembunyikan alamat dari user dan sistem yang sedang berkomunikasi
 
 - - - -
 
