@@ -186,3 +186,21 @@ na
 * Counter Measure/Prevent &nbsp;: Packet filtering adalah metode untuk mencegah IP Spoofing attack. Mem-block packet dari luar network dengan source address di dalam network (filter jalan masuk) dan mem-block packet dari dalam network dengan source address di luar network (filter jalan keluar) dapat membantu pencegahan IP spoofing attack.
 
 - - - -
+
+## Edwin Harly - 14.111.1014
+
+### 1. Transport Layer
+
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Man-in-the-Middle
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Confidentiality & Integrity
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Penyerang menyadap atau sniffing sebuah koneksi antara 2 user. Kedua user ini percaya bahwa mereka berkomunikasi satu sama lain, padahal dibalik itu mereka berkomunikasi melalui perantara si penyerang, sehingga pesan apapun yang dikirim akan melewati si penyerang dulu, dengan begitu penyerang bisa mengetahui isi pesan yang dikirim dan juga bisa mengubah isi pesan yang dikirim.
+* Counter Measure/Prevent &nbsp;: Beberapa teknik untuk menangkalnya adalah DNSSEC (Secure DNS extensions), Public key infrastructures, Certificate pinning.
+
+### 2. Layer Name Here
+
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : 
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: 
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: 
+* Counter Measure/Prevent &nbsp;: 
+
+- - - -
