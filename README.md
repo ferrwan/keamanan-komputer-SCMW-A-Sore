@@ -196,11 +196,11 @@ na
 * Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Penyerang menyadap atau sniffing sebuah koneksi antara 2 user. Kedua user ini percaya bahwa mereka berkomunikasi satu sama lain, padahal dibalik itu mereka berkomunikasi melalui perantara si penyerang, sehingga pesan apapun yang dikirim akan melewati si penyerang dulu, dengan begitu penyerang bisa mengetahui isi pesan yang dikirim dan juga bisa mengubah isi pesan yang dikirim.
 * Counter Measure/Prevent &nbsp;: Beberapa teknik untuk menangkalnya adalah DNSSEC (Secure DNS extensions), Public key infrastructures, Certificate pinning.
 
-### 2. Layer Name Here
+### 2. Session Layer
 
-* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : 
-* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: 
-* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: 
-* Counter Measure/Prevent &nbsp;: 
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : SSH Downgrade Attack
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Confidentiality
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Penyerang akan meminta secara paksa kepada client dan server untuk menggunakan protokol SSH1 yang kurang aman sehingga penyerang bisa lebih mudah untuk menyerang. Biasanya terjadi kepada server yang mendukung SSH1 dan SSH2.
+* Counter Measure/Prevent &nbsp;: Setting agar server hanya akan menerima versi protokol SSH terbaru
 
 - - - -
