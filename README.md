@@ -204,3 +204,21 @@ na
 * Counter Measure/Prevent &nbsp;: Setting agar server hanya akan menerima versi protokol SSH terbaru
 
 - - - -
+
+## Calvin - 14.111.2028
+
+### 1. Transport Layer
+
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : CRIME (Compression Ratio Info-leak Made Easy)
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Confidentiality & Integrity
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: CRIME adalah eksploitasi keamanan terhadap cookies melalui koneksi yang menggunakan HTTPS dan protokol SPDY yang juga mengkompresi data. Ketika digunakan untuk mendapatkan isi dari cookie yang berisi autentikasi rahasia, maka hal itu memungkinkan penyerang untuk melakukan pembajakan pada web yang terautentikasi oleh sesi,yang memungkinkan penyerang untuk melancarkan serangan lebih lanjut.
+* Counter Measure/Prevent &nbsp;: CRIME bisa dihindari dengan menghindari penggunaan kompresi, baik pada client, melarang web untuk mengkompresi permintaan dengan SPDY, atau dari website dengan melarang penggunaan kompresi data transaksi tersebut dengan menggunakan fitur negosiasi protokol TLS.
+
+### 2. Application Layer
+
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Application Layer DDoS
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Availability
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Penyerangan DDoS melalui Lapisan Application dilakukan terutuma untuk target yang khusus, termasuk mengganggu transaksi dan akses terhadap database.Penyerangan ini menghabiskan resource yang sedikit dan terkadang dibarengi dengan penyerangan di sisi network layer. Penyerangan ini menyamar seperti lalu lintas jaringan yang normal, kecuali pihaknya menargetkan pada aplikasi tertentu. Serangan pada application layer ini dapat mengganggu layanan seperti pengambilan informasi atau fungsi pencarian serta fungsi browser, layanan email dan aplikasi foto, untuk berhasil melakukan ddos, diperlukan lebih dari sekitar 3-5 node pada jaraingan yang berbeda harus digunakan.
+* Counter Measure/Prevent &nbsp;: Perlindungan terhadap serangan ini membutuhkan DDoS Mitigation. Keberhasilan mitigasi membutuhkan pengecekan atau pengidentifikasian lalu lintas network yang masuk, membedakan apakah lalu lintas itu berasal dari manusia kah, atau dari bott atau program yang mengirimkannya.
+
+- - - -
