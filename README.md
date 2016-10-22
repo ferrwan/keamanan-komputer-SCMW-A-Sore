@@ -222,3 +222,20 @@ na
 * Counter Measure/Prevent &nbsp;: Perlindungan terhadap serangan ini membutuhkan DDoS Mitigation. Keberhasilan mitigasi membutuhkan pengecekan atau pengidentifikasian lalu lintas network yang masuk, membedakan apakah lalu lintas itu berasal dari manusia kah, atau dari bott atau program yang mengirimkannya.
 
 - - - -
+## Adrian Hartanto - 14.111.1537
+
+### 1. Transport Layer
+
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Teardrop / IP Fragmentation Attack
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Availability
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Teardrop attack adalah suatu serangan Denial of Service (DoS) yang memanfaatkan kelemahan yang ada di TCP/IP yaitu packet fragmentation atau pemecahan paket  pada waktu paket-paket yang terfragmentasi tersebut disatukan kembali. Penyerang melakukan spoofing/pemalsuan/rekayasa terhadap paket-paket yang dikirim ke server yang hendak diserangnya, misalnya gap dan overlap pada waktu paket-paket tersebut disatukan kembali. Sehingga saat menyatukannya kembali, server akan bingung dan akhirnya crash, hang, atau melakukan reboot.
+* Counter Measure/Prevent &nbsp;: paket filtering melalui firewall yang sudah dikonfigurasi untuk memantau dan memblokir paket-paket yang mencurigakan, misalnya apakah melanggar ketentuan fragmentation (contoh: menggunakan router atau proxy yang aman). Selain itu juga dapat dilakukan mekanisme blacklisting / whitelisting yang memfilter traffic berdasarkan faktor misalnya IP reputation dan rate pattern.
+
+### 2. Application Layer
+
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : DNS Poisoning
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Confidentiality
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Serangan dengan cara menyampaikan informasi IP Address yang salah mengenai sebuah host, dengan tujuan untuk mengalihkan lalu lintas paket data dari tujuan yang sebenarnya. DNS Poisoning mengacaukan DNS Server asli dengan cara mengeksploitasi vulnerability pada DNS Service agar pengguna Internet terkelabui untuk mengakses web site palsu yang dibuat benar-benar menyerupai aslinya tersebut, agar data dapat masuk ke server palsu.
+* Counter Measure/Prevent &nbsp;: Melakukan otentikasi host yang akan kita hubungi, misalnya mempergunakan digital certificate. Dengan digital certificate, seseorang dapat dengan yakin bahwa host yang dia akses adalah host yang sebenarnya. 
+
+- - - -
