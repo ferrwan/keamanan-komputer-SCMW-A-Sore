@@ -224,20 +224,19 @@ na
 - - - -
 ## Adrian Hartanto - 14.111.1537
 
-### 1. Transport Layer
+### 1. Presentation Layer
 
-* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Teardrop / IP Fragmentation Attack
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : SSL Garbage Flood
 * Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Availability
-* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Teardrop attack adalah suatu serangan Denial of Service (DoS) yang memanfaatkan kelemahan yang ada di TCP/IP yaitu packet fragmentation atau pemecahan paket  pada waktu paket-paket yang terfragmentasi tersebut disatukan kembali. Penyerang melakukan spoofing/pemalsuan/rekayasa terhadap paket-paket yang dikirim ke server yang hendak diserangnya, misalnya gap dan overlap pada waktu paket-paket tersebut disatukan kembali. Sehingga saat menyatukannya kembali, server akan bingung dan akhirnya crash, hang, atau melakukan reboot.
-* Counter Measure/Prevent &nbsp;: paket filtering melalui firewall yang sudah dikonfigurasi untuk memantau dan memblokir paket-paket yang mencurigakan, misalnya apakah melanggar ketentuan fragmentation (contoh: menggunakan router atau proxy yang aman). Selain itu juga dapat dilakukan mekanisme blacklisting / whitelisting yang memfilter traffic berdasarkan faktor misalnya IP reputation dan rate pattern.
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Salah satu bentuk penyerangan DDoS dengan mengirimkan request SSL yang berbahaya ke SSL server dan mencoba menghabiskan resource dari Server tersebut,serta memblokir layanan dari pengguna.
+* Counter Measure/Prevent &nbsp;: Menggunakan IPS (Intrusion Prevention System) Signature , memaksimalkan settingan pada server, atau menggunakan jasa DDos Mitigation Service Provider.
 
 ### 2. Application Layer
 
-* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : DNS Poisoning
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : FTP Bounce Attack
 * Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Confidentiality
-* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Serangan dengan cara menyampaikan informasi IP Address yang salah mengenai sebuah host, dengan tujuan untuk mengalihkan lalu lintas paket data dari tujuan yang sebenarnya. DNS Poisoning mengacaukan DNS Server asli dengan cara mengeksploitasi vulnerability pada DNS Service agar pengguna Internet terkelabui untuk mengakses web site palsu yang dibuat benar-benar menyerupai aslinya tersebut, agar data dapat masuk ke server palsu.
-* Counter Measure/Prevent &nbsp;: Melakukan otentikasi host yang akan kita hubungi, misalnya mempergunakan digital certificate. Dengan digital certificate, seseorang dapat dengan yakin bahwa host yang dia akses adalah host yang sebenarnya.
-
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Penyerangan dengan mengeksploitasi protokol FTP dimana penyerang dapat menggunakan perintah PORT untuk meminta akses ke port secara tidak langsung melalui penggunaan device korban sebagai orang tengah untuk proses request. Penyerangan ini dapat digunakan untuk port scan host secara diam-diam , dan mengakses port tertentu yang mana penyerang tidak dapat mengaksesnya melalui koneksi langsung, contohnya dengan nmap port scanner.
+* Counter Measure/Prevent &nbsp;: Memastikan agar server FTP tidak mengirimkan data melalui port-port TCP dibawah angka 1024, menggunakan password yang baik, dan tidak menggunakan user standar  (menghindari user enumeration).
 - - - -
 
 ## Adlin M. Hasri - 14.111.1642
