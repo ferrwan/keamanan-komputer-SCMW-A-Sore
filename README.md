@@ -242,21 +242,24 @@ na
 
 ## Adlin M. Hasri - 14.111.1642
 
-### 1. Data-Link Layer
+### 1. Network Layer
 
-* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : MAC Flooding
-* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Availability
-* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Sebuah serangan yang langka, dimana penyerang mengirimkan beberapa frame Ethernet boneka, masing-masing dengan alamat MAC yang berbeda, Network switch memperlakukan alamat MAC secara terpisah, dan menyebabkan pemesanan beberapa sumber daya untuk setiap permintaan. Ketika semua memori di switch digunakan, hal tersebut dapat mematikan atau penyebab sistem tidak responsif. Dalam beberapa jenis router, serangan MAC Flooding dapat menyebabkan seluruh tabel routing mereka down, sehingga mengganggu seluruh jaringan yang ada dibawah domain routing.
-* Counter Measure/Prevent &nbsp;: Gunakan "port-security" untuk membatasi sebuah port ke nomor (mungkin satu) sumber alamat MAC. Setelah jumlah ini melebihi batas, Switch dapat menjebak, shutdown port atau membuang frame yang masuk.
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Sinkhole Attack
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Integrity and Confidentiality
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Sinkhole attack merupakan salah satuactive attack yang berada pada layer network. Serangan sinkhole ini akan memberikan informasi routing yang salah pada node - node yang ada pada jaringan, sehingga informasi yang dikirimkan dapat diketahui oleh penyerang. Cara kerja serangan ini biasanya menggunakan kelemahan protokol yang digunakan pada jaringan. Serangan pada AODV (Ad hoc On-demand Distance Vector) akan dilakukan dengan memaksimalkan sequence number atau meminimalkan jumlah hop pada jaringan AODV. Sedangkan untuk DSR (Debt Service Ratio), serangan ini akan memanfaatkan pesan RREQ (Route Request) yang berisi alamat pengirim atau tujuan dengan memasukkan node sinkhole sebagai hop tujuan.
+* Counter Measure/Prevent &nbsp;: Pencengahan pendekatan mendasar :
+1. Kryptografi "message digests algorithm" untuk mendeteksi sinkhole attacks.
+2. 2 protocols, RESIST-0 dan RESIST-1, yang menggunakan pendekatan kriptografis di dalam routing protocols untuk mengatasi masalah sinkhole attacks
+3. A Trust Based Routing Protocol untuk Mitigasi serangan Sinkhole di Wireless Sensor Networks
 
 ### 2. Transport Layer
 
 * Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Smurf Attack
-* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: A
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Availability
 * Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;:  sebuah serangan yang dibangun dengan menggunakan pemalsuan terhadap paket-paket ICMP echo request, yakni sebuah jenis paket yang digunakan oleh utilitas troubleshooting jaringan, PING. Si penyerang akan memulai serangan dengan membuat paket-paket "ICMP echo request" dengan alamat IP sumber berisi alamat IP host target yang akan diserang (berarti alamat telah dipalsukan atau telah terjadi address spoofing). Paket-paket tersebut pun akan dikirimkan secara broadcast ke jaringan di mana komputer target berada, dan host-host lainnya yang menerima paket yang bersangkutan akan mengirimkan balasan dari "ICMP echo request" ("ICMP echo reply") kepada komputer target, seolah-olah komputer target merupakan komputer yang mengirimkan ICMP echo request tersebut. Semakin banyak komputer yang terdapat di dalam jaringan yang sama dengan target, maka semakin banyak pula ICMP echo reply yang dikirimkan kepada target, sehingga akan membanjiri sumber daya komputer target, dan mengakibatkan kondisi penolakan layanan (Denial of Service) yang menjadikan para pengguna tidak dapat mengakses layanan yang terdapat di dalam komputer yang diserang. Beberapa sistem bahkan mengalami crash atau hang, dan lagi, banjir yang berisi paket-paket "ICMP echo request/reply" akan membuat kongesti (kemacetan) jaringan yang dapat memengaruhi komputer lainnya.
 * Counter Measure/Prevent &nbsp;: Beberapa langkah preventif :
-* * Langkah 1. Amplifier Konfigurasi. router harus dikonfigurasi sehingga tidak maju diarahkan siaran ke jaringan. Penting untuk dicatat bahwa broadcast tersebut harus dinonaktifkan pada semua router dan tidak hanya hanya yang eksternal. Perintah "no ip directed-broadcast" pada router Cisco harus melakukan tugas dalam banyak kasus. Ini juga akan memastikan bahwa karyawan pada jaringan internal tidak akan dapat memulai serangan Smurf. Namun juga disarankan bahwa seseorang memiliki perangkat penyaringan (seperti firewall) di perimeter, sehingga memberikan lapisan tambahan keamanan.
-* * Langkah 2. Konfigurasi sistem operasi server. Server harus dikonfigurasi sehingga mereka tidak akan menanggapi permintaan broadcast diarahkan. FreeBSD adalah salah satu sistem tersebut yang secara default tidak menanggapi permintaan ini.
-* * Langkah 3. Victim issues, tidak banyak yang dapat dilakukan pada korban terakhir dan kerusakan akan selesai kecuali ISP korban mengambil beberapa tindakan untuk memblokir ICMP Echo Reply floods. Bahkan jika korban router parameter menyangkal ICMP Echo Reply, link dari ISP ke situs korban akan menderita.
+** Langkah 1. Amplifier Konfigurasi. router harus dikonfigurasi sehingga tidak maju diarahkan siaran ke jaringan. Penting untuk dicatat bahwa broadcast tersebut harus dinonaktifkan pada semua router dan tidak hanya hanya yang eksternal. Perintah "no ip directed-broadcast" pada router Cisco harus melakukan tugas dalam banyak kasus. Ini juga akan memastikan bahwa karyawan pada jaringan internal tidak akan dapat memulai serangan Smurf. Namun juga disarankan bahwa seseorang memiliki perangkat penyaringan (seperti firewall) di perimeter, sehingga memberikan lapisan tambahan keamanan.
+** Langkah 2. Konfigurasi sistem operasi server. Server harus dikonfigurasi sehingga mereka tidak akan menanggapi permintaan broadcast diarahkan. FreeBSD adalah salah satu sistem tersebut yang secara default tidak menanggapi permintaan ini.
+** Langkah 3. Victim issues, tidak banyak yang dapat dilakukan pada korban terakhir dan kerusakan akan selesai kecuali ISP korban mengambil beberapa tindakan untuk memblokir ICMP Echo Reply floods. Bahkan jika korban router parameter menyangkal ICMP Echo Reply, link dari ISP ke situs korban akan menderita.
 
 - - - -
