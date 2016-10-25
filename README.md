@@ -180,10 +180,10 @@ na
 
 ### 2. Network Layer
 
-* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : IP Address Spoofing Attack
-* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Confidentiality
-* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: attacker menanam source IP address palsu pada packet. Dengan mengganti source IP address, response dari pakcet akan dikirim pada IP address yang salah, dengan demikian attacker bisa mendapatkan data tersebut.
-* Counter Measure/Prevent &nbsp;: Packet filtering adalah metode untuk mencegah IP Spoofing attack. Mem-block packet dari luar network dengan source address di dalam network (filter jalan masuk) dan mem-block packet dari dalam network dengan source address di luar network (filter jalan keluar) dapat membantu pencegahan IP spoofing attack.
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : ARP Spoofing Attacks (ARP flooding or ARP poisoning)
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Confidentiality, Integrity
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: membantu attacker untuk sniff data pada Local Area Network, memodifikasi trafiic, dan sebagainya. ARP Spoofing Attack yaitu dengan mengirim pesan / paket ARP palsu ke LAN Ethernet. Tujuan dari ini adalah untuk mengasosiasikan alamat MAC penyerang dengan alamat IP dari komputer lain, umumnya default gateway. Akibatnya, setiap traffic yang dikirim ke default gateway akan terkirim ke attacker. Penyerang kemudian dapat meneruskan traffic / packet ke default gateway setelah sniffing atau memodifikasi data tersebut.
+* Counter Measure/Prevent &nbsp;: Dynamic ARP inspection menahan semua ARP request dan response pada port yang tidak dipercaya. Setiap paket diverifikasi IP-to-MAC binding yang harus valid via DHCP snooping. Packet ARP yang ditolak akan di drop atau dicatat (logged) oleh switch sehingga ARP poisoning dihentikan. Packet ARP yang datang dari port yang terpercaya tidak akan ditahan. Dynamic ARP inspection juga bisa membatasi rate dari ARP Request dari port client untuk meminimalisir mekanisme scanning pada port. Dynamic ARP inspection menggunakan informasi dari DHCP Snooping table.
 
 - - - -
 
