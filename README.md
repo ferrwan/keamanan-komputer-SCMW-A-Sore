@@ -180,10 +180,10 @@ na
 
 ### 2. Network Layer
 
-* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : ARP Spoofing Attacks (ARP flooding or ARP poisoning)
-* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Confidentiality, Integrity
-* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: membantu attacker untuk sniff data pada Local Area Network, memodifikasi trafiic, dan sebagainya. ARP Spoofing Attack yaitu dengan mengirim pesan / paket ARP palsu ke LAN Ethernet. Tujuan dari ini adalah untuk mengasosiasikan alamat MAC penyerang dengan alamat IP dari komputer lain, umumnya default gateway. Akibatnya, setiap traffic yang dikirim ke default gateway akan terkirim ke attacker. Penyerang kemudian dapat meneruskan traffic / packet ke default gateway setelah sniffing atau memodifikasi data tersebut.
-* Counter Measure/Prevent &nbsp;: Dynamic ARP inspection menahan semua ARP request dan response pada port yang tidak dipercaya. Setiap paket diverifikasi IP-to-MAC binding yang harus valid via DHCP snooping. Packet ARP yang ditolak akan di drop atau dicatat (logged) oleh switch sehingga ARP poisoning dihentikan. Packet ARP yang datang dari port yang terpercaya tidak akan ditahan. Dynamic ARP inspection juga bisa membatasi rate dari ARP Request dari port client untuk meminimalisir mekanisme scanning pada port. Dynamic ARP inspection menggunakan informasi dari DHCP Snooping table.
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Salami Attack
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Integrity
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Dengan mengumpulkan data dengan jumlah yang kecil dan melibatkan attacker untuk mengubah informasi yang terdapar di database. Attacker mencuri hanya sedikit dalam jangka waktu yang lama dari jumlah transaksi yang besar.
+* Counter Measure/Prevent &nbsp;: perusahaan mengupdate security system setinggi mungkin. Bank mengimbau customer untuk melapor pengurangan-pengurangan pada uang mereka yang tidak mereka ketahui penyebabnya.
 
 - - - -
 
