@@ -262,3 +262,22 @@ na
     * Langkah 3. Victim issues, tidak banyak yang dapat dilakukan pada korban terakhir dan kerusakan akan selesai kecuali ISP korban mengambil beberapa tindakan untuk memblokir ICMP Echo Reply floods. Bahkan jika korban router parameter menyangkal ICMP Echo Reply, link dari ISP ke situs korban akan menderita.
 
 - - - -
+
+## Jeffry - 14.111.0027
+
+### 1. Application Layer
+
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Teardrop
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: C
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Teardrop attack adalah suatu serangan bertipe Denial of Service (DoS) terhadap suatu server/komputer yang terhubung dalam suatu jaringan. Teardrop attack ini memanfaatkan fitur yang ada di TCP/IP yaitu packet fragmentation atau pemecahan paket, dan kelemahan yang ada di TCP/IP pada waktu paket-paket yang terfragmentasi tersebut disatukan kembali. Dalam suatu pengiriman data dari satu komputer ke komputer yang lain melalui jaringan berbasis TCP/IP, maka data tersebut akan dipecah-pecah menjadi beberapa paket yang lebih kecil di komputer asal, dan paket-paket tersebut dikirim dan kemudian disatukan kembali di komputer tujuan. Dalam teardrop attack, penyerang melakukan spoofing/pemalsuan/rekayasa terhadap paket-paket yang dikirim ke server yang hendak diserangnya.
+* Counter Measure/Prevent &nbsp;: Server bisa diproteksi dari tipe serangan teardrop ini dengan paket filtering melalui firewall yang sudah dikonfigurasi untuk memantau dan memblokir paket-paket yang berbahaya.
+
+### 2. Application Layer
+
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Half-Open Connection
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: A
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Half-open connection attack juga disebut sebagai SYN attack karena memanfaatkan paket SYN (synchronization) dan kelemahan yang ada di 3-way handshake pada waktu hubungan TCP/IP ingin dibentuk antara 2 komputer. Dalam serangan half-open connection, penyerang mengirimkan ke server yang hendak diserang banyak paket SYN yang telah dispoof atau direkayasa sehingga alamat asal (source address) menjadi tidak valid. Dengan kata lain, alamat asal paket-paket SYN tersebut tidak menunjuk pada komputer yang benar-benar ada. Pada waktu server menerima paket-paket SYN tersebut, maka server akan mengirimkan paket SYN/ACK untuk menjawab tiap paket SYN yang diterima. Namun, karena paket SYN/ACK dari server tersebut dikirim ke alamat yang tidak ada, maka server akan terus menunggu untuk menerima jawaban berupa paket ACK. Jika server tersebut dibanjiri oleh paket-paket SYN yang tidak valid tersebut, maka akhirnya server akan kehabisan memory dan sumber daya komputasi karena server terus menunggu untuk menerima jawaban paket ACK yang tidak akan pernah datang. Akhirnya server akan crash, hang, atau melakukan reboot dan terjadilah gangguan terhadap layanan (denial of service).
+* Counter Measure/Prevent &nbsp;: Tipe serangan half-open connection atau SYN attack ini dapat dicegah dengan paket filtering dan firewall, sehingga paket-paket SYN yang invalid tersebut dapat diblokir oleh firewall sebelum membanjiri server.
+
+- - - -
+
