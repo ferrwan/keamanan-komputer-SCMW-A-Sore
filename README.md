@@ -281,3 +281,18 @@ na
 
 - - - -
 
+### Teddy - 141110035
+
+### 1. Network Layer
+
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Jamming Attack
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Availability
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Adalah cara membuat kacau sinyal di suatu daerah. Tindakan ini akan berbahaya apabila dilakukan oleh orang yang tidak bertanggung jawab karena hal ini bisa mengakibatkan jaringan sebuah kota lumpuh.
+* Counter Measure/Prevent &nbsp;: Melakukan sistem blocking terhadap IP yang mencurigakan.
+
+### 2. DataLink Layer
+
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Eavesdrooping
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Confidentiality
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: suatu kegiatan melakukan intersepsi atau mengintip maupun menguping yang tak diizinkan baik itu komunikasi pribadi lewat telepon, sms. video conference, maupun transmisi fax. Kegiatan ini dilakukan guna mencuri data yang dikirim melalui jaringan yang tidak dienkripsi lebih dahulu.
+* Counter Measure/Prevent &nbsp;: Dengan membuat teknologi enkripsi data terlebih dahulu sebelum data dikirim ke penerima
