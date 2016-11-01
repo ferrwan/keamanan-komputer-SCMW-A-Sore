@@ -296,3 +296,19 @@ na
 * Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Confidentiality
 * Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: suatu kegiatan melakukan intersepsi atau mengintip maupun menguping yang tak diizinkan baik itu komunikasi pribadi lewat telepon, sms. video conference, maupun transmisi fax. Kegiatan ini dilakukan guna mencuri data yang dikirim melalui jaringan yang tidak dienkripsi lebih dahulu.
 * Counter Measure/Prevent &nbsp;: Dengan membuat teknologi enkripsi data terlebih dahulu sebelum data dikirim ke penerima
+
+### William Karno - 141112052
+
+### 1. Transport Layer
+
+* Nama Penyerangan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Beast
+* Penyerangan Terhadap &nbsp;&nbsp;&nbsp;&nbsp;: Confidentiality
+* Deskripsi Penyerangan &nbsp;&nbsp;&nbsp;&nbsp;: Beast melakukan penyerangan pada bagian Transport layer dengan versi TLS 1.0. Beast melakukan exploitasi pada kelemahan Cipher Block Chainning (CBC) yang mengakibatkan dapat melakukan eksploitasi terhadap SSL. CBC dapat digunakan untuk melakukan MITM (man in the middle) untuk menyerang SSL dengan cara dekripsi dan memperoleh authentication token.
+* Counter Measure/Prevent&nbsp;: dengan melakukan update terhadap browser dan teknology yang terintegrasi serta menggunakan TLS versi 1.1
+
+### 2. Transport Layer
+
+* Nama Penyerangan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Breach
+* Penyerangan Terhadap &nbsp;&nbsp;&nbsp;&nbsp;: Confidentiality
+* Deskripsi Penyerangan &nbsp;&nbsp;&nbsp;&nbsp;: Breach melakukan ekploitasi pada bagian kompresi dan kombinasi enkripsi pada web server atau user. Breach menyerang kompresi dari http dengan mengambil token.
+* Counter Measure/Prevent&nbsp;: dengan melakukan disabling compression
