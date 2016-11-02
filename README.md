@@ -297,6 +297,8 @@ na
 * Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: suatu kegiatan melakukan intersepsi atau mengintip maupun menguping yang tak diizinkan baik itu komunikasi pribadi lewat telepon, sms. video conference, maupun transmisi fax. Kegiatan ini dilakukan guna mencuri data yang dikirim melalui jaringan yang tidak dienkripsi lebih dahulu.
 * Counter Measure/Prevent &nbsp;: Dengan membuat teknologi enkripsi data terlebih dahulu sebelum data dikirim ke penerima
 
+- - - -
+
 ### William Karno - 141112052
 
 ### 1. Transport Layer
@@ -312,3 +314,26 @@ na
 * Penyerangan Terhadap &nbsp;&nbsp;&nbsp;&nbsp;: Confidentiality
 * Deskripsi Penyerangan &nbsp;&nbsp;&nbsp;&nbsp;: Breach melakukan ekploitasi pada bagian kompresi dan kombinasi enkripsi pada web server atau user. Breach menyerang kompresi dari http dengan mengambil token.
 * Counter Measure/Prevent&nbsp;: dengan melakukan disabling compression
+
+- - - -
+
+### Hendra Tandiono - 141110370
+
+### 1. Layer Network
+
+* Nama Penyerangan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: LAND Attack
+* Penyerangan Terhadap &nbsp;&nbsp;&nbsp;&nbsp;: Confidentiality
+* Deskripsi Penyerangan &nbsp;&nbsp;&nbsp;&nbsp;: LAND attack adalah serangan terhadap suatu server atau komputer yang terhubung dalam jaringan yang bertujuan untuk menghentikan layanan yang diberikan oleh server tersebut sehingga terjadi gangguan terhadap jaringan komputer itu. Tipe serangan semacam ini disebut sebagai Denial of Service (DoS) attack. LAND attack dikategorikan sebagai serangan SYN(SYN attack) karena menggunakan packet SYN (synchronization) pada waktu melakukan 3-way handshake untuk membentuk suatu hubungan berbasis TCP/IP. 
+* Counter Measure/Prevent &nbsp;:
+    * Melakukan Pengecekan data transfer yang tidak sesuai dengan data yang kita kirim
+    * Menginstall Firewall yang memiliki konfigurasi untuk menahan data yang tidak di inginkan atau mencurigakan
+
+### 1. Layer Network
+
+* Nama Penyerangan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Ping Kematian (Ping of death)
+* Penyerangan Terhadap &nbsp;&nbsp;&nbsp;&nbsp;: Availability
+* Deskripsi Penyerangan &nbsp;&nbsp;&nbsp;&nbsp;: Ping Kematian ( Ping of death disingkat POD) adalah jenis serangan pada komputer yang melibatkan pengiriman ping yang salah atau berbahaya ke komputer target. Sebuah ping biasanya berukuran 56 byte (atau 84 bytes ketika header IP dianggap). Dalam sejarahnya, banyak sistem komputer tidak bisa menangani paket ping lebih besar daripada ukuran maksimum paket IP, yaitu 65.535 byte. Mengirim ping dalam ukuran ini (65.535 byte) bisa mengakibatkan kerusakan (crash) pada komputer target.
+* Counter Measure/Prevent &nbsp;:
+    * Menginstall Firewall yang memiliki konfigurasi untuk menahan data yang tidak di inginkan atau mencurigakan
+    * Melakukan update terhadap program yang bersangkutan
+- - - -
