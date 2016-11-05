@@ -356,8 +356,8 @@ na
 
 Cara Kerja Trojan Horse
 Trojan berbeda dengan jenis perangkat lunak mencurigakan lainnya seperti virus komputer atau worm karena dua hal berikut :
-- Trojan bersifat "stealth" (siluman dan tidak terlihat) dalam operasinya dan seringkali berbentuk seolah-olah program tersebut merupakan program baik-baik, sementara - Virus computer atau worm bertindak lebih agresif dengan merusak sistem atau membuat sistem menjadi crash.
-Trojan dikendalikan dari komputer lain (komputer attacker).
+- Trojan bersifat "stealth" (siluman dan tidak terlihat) dalam operasinya dan seringkali berbentuk seolah-olah program tersebut merupakan program baik-baik, sementara virus computer atau worm bertindak lebih agresif dengan merusak sistem atau membuat sistem menjadi crash.
+- Trojan dikendalikan dari komputer lain (komputer attacker).
 
 Jenis-Jenis Trojan Horse
 - Remote Access Trojan
@@ -387,6 +387,7 @@ Ada lagi sebuah jenis Trojan yang mengimbuhkan dirinya sendiri ke sebuah program
 - Cookies Stuffing, ini adalah script yang termasuk dalam metode blackhat, gunanya untuk membajak tracking code penjualan suatu produk, sehingga komisi penjualan diterima oleh pemasang cookies stuffing, bukan oleh orang yang terlebih dahulu mereferensikan penjualan produk tersebut di internet
 
 Cara Penyebaran Trojan Horse
+
 Penggunaan istilah Trojan atau Trojan horse dimaksudkan untuk menyusupkan kode-kode mencurigakan dan merusak di dalam sebuah program baik-baik dan berguna; seperti halnya dalam Perang Troya, para prajurit Sparta bersembunyi di dalam Kuda Troya yang ditujukan sebagai pengabdian kepada Poseidon. Kuda Troya tersebut menurut para petinggi Troya dianggap tidak berbahaya, dan diizinkan masuk ke dalam benteng Troya yang tidak dapat ditembus oleh para prajurit Yunani selama kurang lebih 10 tahun perang Troya bergejolak.
 
 * Counter Measure/Prevent &nbsp;: Untuk mencegah dan menghapus virus Trojan pastikan anda memasang antivirus yang selalu ter-update, mengaktifkan Firewall baik bawaan dari Windows atau dari luar juga mengurangi resiko komputer kita diintai atau dikendalikan dari komputer lain.
