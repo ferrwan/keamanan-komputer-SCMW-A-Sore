@@ -336,4 +336,59 @@ na
 * Counter Measure/Prevent &nbsp;:
     * Menginstall Firewall yang memiliki konfigurasi untuk menahan data yang tidak di inginkan atau mencurigakan
     * Melakukan update terhadap program yang bersangkutan
+
+- - - -
+
+## Kevin Fransetio - 141110876
+
+### 1. Layer Network
+
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : DNS Poisoning
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Confidentiality dan Integrity
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: DNS Poisoning merupakan sebuah cara untuk menembus pertahanan dengan cara menyampaikan informasi IP Address yang salah mengenai sebuah host, dengan tujuan untuk mengalihkan lalu lintas paket data dari tujuan yang sebenarnya. Cara ini banyak dipakai untuk menyerang situs-situs e-commerce dan banking yang saat ini bisa dilakukan dengan cara online dengan pengamanan Token. Teknik ini dapat membuat sebuah server palsu tampil identik dengan dengan server online banking yang asli. Oleh karena itu diperlukan digital cerficate untuk mengamankannya, agar server palsu tidak dapat menangkap data otentifikasi dari nasabah yang mengaksesnya. Jadi dapat disimpulkan cara kerja DNS (Domain Name System) poisoning ini adalah dengan mengacaukan DNS Server asli agar pengguna Internet terkelabui untuk mengakses web site palsu yang dibuat benar-benar menyerupai aslinya tersebut, agar data dapat masuk ke server palsu.
+* Counter Measure/Prevent &nbsp;: Cara mengatasinya adalah gunakan DNS server yang terpercaya, dan bagi seorang admin agar selalu melakukan hardening thd DNS server miliknya, bisa dengan cara membatasi 'trust' peering DNS, dll.
+
+### 2. Layer Network
+
+* Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Trojan Horse
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Confidentiality ,Integrity, dan Availability
+* Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Trojan horse atau Kuda Troya atau yang lebih dikenal sebagai Trojan dalam keamanan komputer merujuk kepada sebuah bentuk perangkat lunak yang mencurigakan (malicious software/malware) yang dapat merusak sebuah sistem atau jaringan. Tujuan dari Trojan adalah memperoleh informasi dari target (password, kebiasaan user yang tercatat dalam system log, data, dan lain-lain), dan mengendalikan target (memperoleh hak akses pada target).
+
+Cara Kerja Trojan Horse
+Trojan berbeda dengan jenis perangkat lunak mencurigakan lainnya seperti virus komputer atau worm karena dua hal berikut :
+- Trojan bersifat "stealth" (siluman dan tidak terlihat) dalam operasinya dan seringkali berbentuk seolah-olah program tersebut merupakan program baik-baik, sementara - Virus computer atau worm bertindak lebih agresif dengan merusak sistem atau membuat sistem menjadi crash.
+Trojan dikendalikan dari komputer lain (komputer attacker).
+
+Jenis-Jenis Trojan Horse
+- Remote Access Trojan
+Disingkat sebagai RAT,  adalah salah satu dari tujuh jenis utama dari Trojan horse dirancang untuk memberikan penyerang dengan kontrol penuh dari sistem korban. Penyerang biasanya menyembunyikan virus trojan horse ini dalam permainan dan program kecil lainnya yang tidak curiga pengguna kemudian dijalankan pada PC mereka.
+
+- Data Sending Trojan
+Jenis trojan horse ini merupakan program yang dirancang untuk mendapatkan data penting dari target serangan data-data penting tersebut seperti akun, password, informasi kartu kredit, file, log alamat e-mail atau lain sebagainya.
+
+- Destruktive trojan / trojan perusak
+Trojan perusak merupakan suatu jenis trojan horse yang dirancang untuk menghancurkan dan menghapus file, dan lebih seperti virus dari yang lain Trojan.
+
+- Proxy trojan
+Suatu jenis Trojan horse yang dirancang untuk menggunakan komputer korban sebagai server proxy.
+
+- File Transfer Protocol (FTP)
+Suatu jenis Trojan horse dirancang untuk membuka pelabuhan 21 (file transfer protokol) dan memungkinkan penyerang terhubung ke komputer anda menggunakan File Transfer Protocol (FTP).
+  
+- Security software disabler Trojan
+Suatu jenis Trojan horse berhenti dirancang atau membunuh keamanan program seperti program antivirus atau firewall tanpa pengguna mengetahui. Jenis Trojan ini biasanya dikombinasikan dengan jenis lain dari Trojan sebagai payload.
+
+- Pencatat penekanan tombol (keystroke logger/keylogger): Jenis Trojan ini akan memantau semua yang diketikkan oleh pengguna dan akan mengirimkannya kepada penyerang. Jenis ini berbeda dengan spyware, meski dua hal tersebut melakukan hal yang serupa (memata-matai pengguna).
+Tool administrasi jarak jauh (Remote Administration Tools/RAT): Jenis Trojan ini mengizinkan para penyerang untuk mengambil alih kontrol secara penuh terhadap sistem dan melakukan apapun yang mereka mau dari jarak jauh, seperti memformat hard disk, mencuri atau menghapus data dan lain-lain. Contoh dari Trojan ini adalah Back Orifice, Back Orifice 2000, dan SubSeven.
+
+- DDoS Trojan atau Zombie Trojan: Jenis Trojan ini digunakan untuk menjadikan sistem yang terinfeksi agar dapat melakukan serangan penolakan layanan secara terdistribusi terhadap host target.
+Ada lagi sebuah jenis Trojan yang mengimbuhkan dirinya sendiri ke sebuah program untuk memodifikasi cara kerja program yang diimbuhinya. Jenis Trojan ini disebut sebagai Trojan virus.
+
+- Cookies Stuffing, ini adalah script yang termasuk dalam metode blackhat, gunanya untuk membajak tracking code penjualan suatu produk, sehingga komisi penjualan diterima oleh pemasang cookies stuffing, bukan oleh orang yang terlebih dahulu mereferensikan penjualan produk tersebut di internet
+
+Cara Penyebaran Trojan Horse
+Penggunaan istilah Trojan atau Trojan horse dimaksudkan untuk menyusupkan kode-kode mencurigakan dan merusak di dalam sebuah program baik-baik dan berguna; seperti halnya dalam Perang Troya, para prajurit Sparta bersembunyi di dalam Kuda Troya yang ditujukan sebagai pengabdian kepada Poseidon. Kuda Troya tersebut menurut para petinggi Troya dianggap tidak berbahaya, dan diizinkan masuk ke dalam benteng Troya yang tidak dapat ditembus oleh para prajurit Yunani selama kurang lebih 10 tahun perang Troya bergejolak.
+
+* Counter Measure/Prevent &nbsp;: Untuk mencegah dan menghapus virus Trojan pastikan anda memasang antivirus yang selalu ter-update, mengaktifkan Firewall baik bawaan dari Windows atau dari luar juga mengurangi resiko komputer kita diintai atau dikendalikan dari komputer lain.
+
 - - - -
