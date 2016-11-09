@@ -344,7 +344,7 @@ na
 ### 1. Layer Network
 
 * Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : DNS Poisoning
-* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Confidentiality, Integrity, dan Avalability
+* Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Confidentiality, Integrity, dan Availability
 * Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: DNS Poisoning merupakan sebuah cara untuk menembus pertahanan dengan cara menyampaikan informasi IP Address yang salah mengenai sebuah host, dengan tujuan untuk mengalihkan lalu lintas paket data dari tujuan yang sebenarnya. Cara ini banyak dipakai untuk menyerang situs-situs e-commerce dan banking yang saat ini bisa dilakukan dengan cara online dengan pengamanan Token. Teknik ini dapat membuat sebuah server palsu tampil identik dengan dengan server online banking yang asli. Oleh karena itu diperlukan digital cerficate untuk mengamankannya, agar server palsu tidak dapat menangkap data otentifikasi dari nasabah yang mengaksesnya. Jadi dapat disimpulkan cara kerja DNS (Domain Name System) poisoning ini adalah dengan mengacaukan DNS Server asli agar pengguna Internet terkelabui untuk mengakses web site palsu yang dibuat benar-benar menyerupai aslinya tersebut, agar data dapat masuk ke server palsu.
 * Counter Measure/Prevent &nbsp;: Cara mengatasinya adalah gunakan DNS server yang terpercaya, dan bagi seorang admin agar selalu melakukan hardening thd DNS server miliknya, bisa dengan cara membatasi 'trust' peering DNS, dll.
 
