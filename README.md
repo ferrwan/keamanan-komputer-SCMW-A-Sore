@@ -323,7 +323,7 @@ na
 
 * Nama Penyerangan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: LAND Attack
 * Penyerangan Terhadap &nbsp;&nbsp;&nbsp;&nbsp;: Confidentiality
-* Deskripsi Penyerangan &nbsp;&nbsp;&nbsp;&nbsp;: LAND attack adalah serangan terhadap suatu server atau komputer yang terhubung dalam jaringan yang bertujuan untuk menghentikan layanan yang diberikan oleh server tersebut sehingga terjadi gangguan terhadap jaringan komputer itu. Tipe serangan semacam ini disebut sebagai Denial of Service (DoS) attack. LAND attack dikategorikan sebagai serangan SYN(SYN attack) karena menggunakan packet SYN (synchronization) pada waktu melakukan 3-way handshake untuk membentuk suatu hubungan berbasis TCP/IP. 
+* Deskripsi Penyerangan &nbsp;&nbsp;&nbsp;&nbsp;: LAND attack adalah serangan terhadap suatu server atau komputer yang terhubung dalam jaringan yang bertujuan untuk menghentikan layanan yang diberikan oleh server tersebut sehingga terjadi gangguan terhadap jaringan komputer itu. Tipe serangan semacam ini disebut sebagai Denial of Service (DoS) attack. LAND attack dikategorikan sebagai serangan SYN(SYN attack) karena menggunakan packet SYN (synchronization) pada waktu melakukan 3-way handshake untuk membentuk suatu hubungan berbasis TCP/IP.
 * Counter Measure/Prevent &nbsp;:
     * Melakukan Pengecekan data transfer yang tidak sesuai dengan data yang kita kirim
     * Menginstall Firewall yang memiliki konfigurasi untuk menahan data yang tidak di inginkan atau mencurigakan
@@ -374,7 +374,7 @@ Suatu jenis Trojan horse yang dirancang untuk menggunakan komputer korban sebaga
 
 - File Transfer Protocol (FTP)
 Suatu jenis Trojan horse dirancang untuk membuka pelabuhan 21 (file transfer protokol) dan memungkinkan penyerang terhubung ke komputer anda menggunakan File Transfer Protocol (FTP).
-  
+
 - Security software disabler Trojan
 Suatu jenis Trojan horse berhenti dirancang atau membunuh keamanan program seperti program antivirus atau firewall tanpa pengguna mengetahui. Jenis Trojan ini biasanya dikombinasikan dengan jenis lain dari Trojan sebagai payload.
 
@@ -393,3 +393,5 @@ Penggunaan istilah Trojan atau Trojan horse dimaksudkan untuk menyusupkan kode-k
 * Counter Measure/Prevent &nbsp;: Untuk mencegah dan menghapus virus Trojan pastikan anda memasang antivirus yang selalu ter-update, mengaktifkan Firewall baik bawaan dari Windows atau dari luar juga mengurangi resiko komputer kita diintai atau dikendalikan dari komputer lain.
 
 - - - -
+
+`This documents are all based on google searched. Thanks for participating`
