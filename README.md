@@ -111,7 +111,6 @@ Mohon untuk tidak sembarangan mengupload, mengubah dan menghapus file ataupun ha
 * Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Availability
 * Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Ancaman ini menyerang dengan mengirimkan traffic UDP yang sangat banyak ke target tertentu atau melakukan request TCP 3 way handshaking setelah mengganti IP addressnya. Akibatnya akan menyebabkan kerusakan pada perangkat networking dan server akan mengalami kelebihan muatan.
 * Counter Measure/Prevent &nbsp;: Dengan menggunakan SYN cookies
->>>>>>> a7dc462d145e32dff7ff45495ad7ac4ec16f3092
 
 - - - -
 
@@ -125,7 +124,7 @@ Mohon untuk tidak sembarangan mengupload, mengubah dan menghapus file ataupun ha
 * Counter Measure/Prevent &nbsp;: Menyembunyikan SSID,Mengunci WEP,Menggunakan MAC Filtering dan Captive Portal
 
 ### 2. Transport layer
-na
+
 * Nama Penyerangan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: Traffic Analysis Attack
 * Penyerangan Terhadap &nbsp; &nbsp; &nbsp;: Confidentialty
 * Deskripsi Penyerangan &nbsp; &nbsp; &nbsp;: Penyerangan dengan menganalisis pergerakan dari paket-paket yang berbeda pada jaringan, dengan tujuan mendapatkan informasi dari pola trafik paket-paket tersebut, semakin banyak paket yang terobservasi semakin banyak pula informasi yang didapatkan.
@@ -394,4 +393,4 @@ Penggunaan istilah Trojan atau Trojan horse dimaksudkan untuk menyusupkan kode-k
 
 - - - -
 
-> **This documents are all based on google searched. Thanks for participating**
+> **This documents are based on google searched. Thanks for participating**
